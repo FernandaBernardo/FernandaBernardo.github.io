@@ -1,0 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #3498db;
+	padding: 1.5em;
+	font-family: 'Indie Flower', Arial, sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.menu {
+	display: inline-block;
+	width: 70%;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: nowrap
+}
+
+.menu a:hover {
+	background-color: #34495e;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #fff;
+	padding: .3em 1em;
+	border-radius: 2em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
