@@ -53,6 +53,29 @@ footer {
 	font-weight: bold;
 }
 
+.contact {
+	color: #fff;
+	text-decoration: none;
+	vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 2em;
+	font-size: 1.1em;
+}
+
+.contact:before {
+	content: "";
+	background-image: url("../img/contato.png");
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: .8em;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
 .img-profile {
 	width: 300px;
 	height: 300px;
@@ -142,23 +165,5 @@ footer {
 	background-image: url('../img/Wordpress-Icon.png'); 
 }
 
-.contact {
-	color: #fff;
-	text-decoration: none;
-	vertical-align: middle;
-	display: table-cell;
-	vertical-align: middle;
-	padding-right: 2em;
-	font-size: 1.1em;
-}
+/*----------------------------------------------------------------------------------------*/
 
-.contact:before {
-	content: "";
-	background-image: url("../img/contato.png");
-	background-size: contain;
-	width: 20px;
-	height: 20px;
-	display: inline-block;
-	vertical-align: middle;
-	margin-right: .8em;
-}
