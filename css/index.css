@@ -1,10 +1,16 @@
 body {
 	font-family: Lato, sans-serif;
+	box-sizing: border-box;
+}
+
+.container {
+	padding-left: 4%;
+	padding-right: 4%;
 }
 
 header {
 	color: #2c3e50;
-	padding: 10em 3em;
+	margin: 10em 3em 5em;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -83,4 +89,86 @@ header section {
 
 .wordpress a {
 	background-image: url("../img/wordpress.svg");
+}
+
+.talks {
+	background-color: #192539;
+	color: #fff;
+	display: inline-block;
+	padding: 1em;
+	font-size: 1.5em;
+	border-top-right-radius: 10px;
+}
+
+.timeline {
+	background-color: #192539;
+	color: #fff;
+	position: relative;
+	padding: 1em 0;
+}
+
+.timeline:before {
+	content: "";
+	width: 50%;
+	border-right: 6px solid #fff;
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.event {
+	position: relative;
+	width: 50%;
+}
+
+.event:after {
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	border-radius: 100%;
+	border: 6px solid #192539;
+	background: #fff;
+	top: 50%;
+	left: calc(100% + 4px);
+	transform: translate(-50%, -50%);
+}
+
+.bubble {
+	background-color: #4A86E8;
+	border-radius: 10px;
+	position: relative;
+	margin: 2.5em;
+	padding: 1em;
+}
+
+.event:nth-child(even) .bubble {
+	left: 100%;
+	margin-left: 2em;
+}
+
+.event:nth-child(odd) .bubble {
+	margin-right: 1.5em;
+}
+
+.bubble:after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+
+.event:nth-child(even) .bubble:after {
+	left: -10px;
+    border-right: 10px solid #4A86E8;
+}
+
+.event:nth-child(odd) .bubble:after {
+	right: -10px;
+	border-left: 10px solid #4A86E8;
 }
