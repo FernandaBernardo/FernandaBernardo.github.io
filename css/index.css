@@ -193,3 +193,18 @@ header section {
 	right: -10px;
 	border-left: 10px solid #4A86E8;
 }
+
+@media(max-width: 600px) {
+	header section {
+		width: 100%;
+	}
+
+	.avatar {
+		display: block;
+		margin: 2.5em auto 0;
+	}
+
+	.container {
+		padding: 0;
+	}
+}
