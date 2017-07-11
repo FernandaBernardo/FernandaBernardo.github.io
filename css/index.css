@@ -143,6 +143,27 @@ header section {
 	padding: 1em;
 }
 
+.bubble p {
+	padding: 0.3em 0;
+}
+
+.bubble a {
+	text-decoration: none;
+    color: #192539;
+}
+
+.bubble a:hover {
+	text-decoration: underline;
+}
+
+.bubble p:first-child a {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
 .event:nth-child(even) .bubble {
 	left: 100%;
 	margin-left: 2em;
