@@ -149,7 +149,8 @@ header section {
 
 .bubble a {
 	text-decoration: none;
-    color: #192539;
+	color: #192539;
+	word-break: break-word;
 }
 
 .bubble a:hover {
@@ -157,11 +158,11 @@ header section {
 }
 
 .bubble p:first-child a {
-    font-size: 1.2em;
-    text-transform: uppercase;
-    display: block;
-    font-weight: bold;
-    text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	display: block;
+	font-weight: bold;
+	text-align: center;
 }
 
 .event:nth-child(even) .bubble {
@@ -186,7 +187,7 @@ header section {
 
 .event:nth-child(even) .bubble:after {
 	left: -10px;
-    border-right: 10px solid #4A86E8;
+	border-right: 10px solid #4A86E8;
 }
 
 .event:nth-child(odd) .bubble:after {
