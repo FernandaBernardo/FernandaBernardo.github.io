@@ -8,6 +8,14 @@ body {
 	padding-right: 4%;
 }
 
+h2 {
+	font-size: 2em;
+	margin-bottom: 1rem;
+	padding-top: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 header {
 	color: #2c3e50;
 	margin: 10em 3em 5em;
@@ -90,6 +98,9 @@ header section {
 .wordpress a {
 	background-image: url("../img/wordpress.svg");
 }
+.sarahah a {
+	background-image: url("../img/sarahah.jpg");
+}
 
 .talks {
 	background-color: #192539;
@@ -112,17 +123,9 @@ header section {
 	width: 50%;
 	border-right: 6px solid #fff;
 	display: block;
-	height: 100%;
+	height: calc(100% - 5.5em);
 	position: absolute;
 	top: 5.5em;
-}
-
-.timeline h2 {
-	font-size: 2em;
-	margin-bottom: 1rem;
-	padding-top: 1rem;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 .event {
@@ -201,6 +204,79 @@ header section {
 .event:nth-child(odd) .bubble:after {
 	right: -10px;
 	border-left: 10px solid #4A86E8;
+}
+
+.posts {
+	overflow: hidden;
+}
+
+.posts h2 {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	padding-top: 0;
+}
+
+.diabetes {
+	background-color: #192539;
+	color: #fff;
+}
+
+.diabetes .post {
+	border-color: #4A86E8;
+}
+
+.diabetes .post a {
+	color: #4A86E8;
+}
+
+.diabetes .post a:hover {
+	color: #fff;
+}
+
+.diabetes .post p > a {
+	color: #fff;
+}
+
+.diabetes .post p > a:hover {
+	color: #4A86E8;
+}
+
+.post {
+	border: 2px solid #192539;
+	border-radius: 10px;
+	padding: 2em;
+	margin-bottom: 2em;
+}
+
+.post a {
+	text-decoration: none;
+	color: #4A86E8;
+}
+
+.post a:hover {
+	color: #192539;
+}
+
+.post h3 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+
+.post p {
+	line-height: 1.2;
+	text-align: justify;
+	margin-bottom: 0.5em;
+}
+
+.post p > a {
+	text-decoration: underline;
+	color: #192539;
+}
+
+.post p > a:hover {
+	color: #4A86E8;
 }
 
 @media(max-width: 600px) {
