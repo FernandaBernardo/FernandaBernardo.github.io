@@ -222,11 +222,11 @@ header section {
 }
 
 .diabetes .post {
-	border-color: #4A86E8;
+	background-color: #4A86E8;
 }
 
 .diabetes .post a {
-	color: #4A86E8;
+	color: #192539;
 }
 
 .diabetes .post a:hover {
@@ -238,7 +238,7 @@ header section {
 }
 
 .diabetes .post p > a:hover {
-	color: #4A86E8;
+	color: #192539;
 }
 
 .post {
@@ -262,6 +262,7 @@ header section {
 	text-transform: uppercase;
 	margin-bottom: 0.5em;
 	text-align: center;
+	font-weight: bold;
 }
 
 .post p {
@@ -291,5 +292,10 @@ header section {
 
 	.container {
 		padding: 0;
+	}
+
+	.posts {
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 }
