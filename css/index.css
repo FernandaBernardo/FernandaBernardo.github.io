@@ -75,6 +75,10 @@ header section {
 	margin-right: 0.7em;
 }
 
+.email a {
+	background-image: url("../img/email.png");
+}
+
 .facebook a {
 	background-image: url("../img/facebook.svg");
 }
