@@ -91,6 +91,10 @@ header section {
 	background-image: url("../img/github.svg");
 }
 
+.medium a {
+	background-image: url("../img/medium.svg");
+}
+
 .codepen a {
 	background-image: url("../img/codepen.svg");
 }
@@ -101,9 +105,6 @@ header section {
 
 .wordpress a {
 	background-image: url("../img/wordpress.svg");
-}
-.sarahah a {
-	background-image: url("../img/sarahah.jpg");
 }
 
 .talks {
