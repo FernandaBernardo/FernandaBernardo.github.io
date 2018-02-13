@@ -1,0 +1,112 @@
+input#posts-tech:checked ~ .posts.tech,
+input#posts-diabetes:checked ~ .posts.diabetes {
+	display: block;
+}
+
+input {
+	position: absolute;
+	left: -9999px;
+}
+
+label { 
+	cursor: pointer;
+    user-select: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 1em;
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    background-color: #192539;
+    color: #fff;
+}
+
+label:hover {
+	background-color: #4A86E8;
+}
+
+label[for="posts-tech"] {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+label[for="posts-diabetes"] {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+input#posts-diabetes:checked ~ .posts-type label[for="posts-diabetes"],
+input#posts-tech:checked ~ .posts-type label[for="posts-tech"] {
+	background-color: #4A86E8;
+}
+
+.posts-type {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.posts {
+	overflow: hidden;
+	background-color: #192539;
+	display: none;
+	padding-top: 2em;
+}
+
+.diabetes {
+	background-color: #4A86E8;
+}
+
+.diabetes .post {
+	border-color: #4A86E8;
+}
+
+.post {
+	border: 2px solid #192539;
+	border-radius: 10px;
+	padding: 2em;
+	margin-bottom: 2em;
+	background-color: #fff;
+}
+
+.post a {
+	text-decoration: none;
+	color: #4A86E8;
+}
+
+.post a:hover {
+	text-decoration: underline;
+}
+
+.post h3 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-bottom: 0.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.post p {
+	line-height: 1.2;
+	text-align: justify;
+	margin-bottom: 0.5em;
+    word-break: break-word;
+}
+
+.post p > a {
+	text-decoration: underline;
+	color: #4A86E8;
+}
+
+.post p > a:hover {
+	color: #192539;
+}
+
+@media(max-width: 600px) {
+    .posts {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
