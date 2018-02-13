@@ -38,6 +38,7 @@ header section {
 
 .social li {
 	display: inline-block;
+	margin-bottom: 0.5em;
 }
 
 .social li a {
@@ -94,6 +95,11 @@ header section {
 }
 
 @media(max-width: 600px) {
+	header {
+		margin-top: 5em;
+		margin-bottom: 5em;
+	}
+
 	header section {
 		width: 100%;
 	}

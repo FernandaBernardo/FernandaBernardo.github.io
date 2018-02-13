@@ -3,7 +3,6 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	min-height: 100%;
-	padding-bottom: 48px;
 }
 
 .container {
@@ -62,10 +61,6 @@ h2 {
 
 footer {
 	background-color: #233140;
-	position: absolute;
- 	right: 0;
-    bottom: 0;
-    left: 0;
 }
 
 footer p {
@@ -79,7 +74,12 @@ footer p {
         padding: 0;
 	}
 	
+	.navigation ul {
+		justify-content: space-around;
+	}
+
 	.navigation li {
 		flex-basis: 25%;
+		margin-left: 0;
 	}
 }
