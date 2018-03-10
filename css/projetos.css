@@ -1,0 +1,39 @@
+.projects {
+    margin: 4em auto;
+}
+
+.project {
+    border: 2px solid #192539;
+    border-radius: 10px;
+    margin: 2em auto;
+    padding: 1em;
+    line-height: 1.2;
+    max-width: 80%;
+}
+
+.project h2 {
+    font-size: 1.5em;
+    text-align: inherit;
+}
+
+.project > a:first-child {
+    text-decoration: none;
+}
+
+.project .contribute {
+    margin-top: 0.7em;
+    color: #E95355;
+    font-weight: bold;
+}
+
+.project a {
+    display: inline-block;
+    color: #192539;
+    font-weight: normal;
+}
+
+.project h2:hover,
+.project a > p:hover,
+.project .contribute a:hover {
+    color: #4A86E8;
+}
