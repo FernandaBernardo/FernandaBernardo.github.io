@@ -15,6 +15,7 @@
 .course h2 {
     font-size: 1.5em;
     text-transform: none;
+    line-height: 1.2;
 }
 
 .course h2:hover {
@@ -42,4 +43,29 @@
 
 .course .content {
     padding: 1em;
+}
+
+.course .content p {
+    text-align: justify;
+    line-height: 1.2;
+}
+
+a.sale {
+    background-color: #E95355;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 1em 1em;
+    display: block;
+    padding: 1em;
+    border: 1px solid #E95355;
+    text-align: center;
+}
+
+.sale:hover {
+    background-color: #fff;
+    color: #E95355;
+}
+
+.sale > span {
+    font-size: 1.1em;
 }
