@@ -25,6 +25,10 @@ h2 {
 	margin-top: 2em;
 }
 
+.navigation li:first-child {
+	margin-left: 0;
+}
+
 .navigation li {
 	text-align: center;
     margin-left: 2em;
