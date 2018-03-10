@@ -97,7 +97,7 @@ header section {
 @media(max-width: 600px) {
 	header {
 		margin-top: 5em;
-		margin-bottom: 5em;
+		margin-bottom: 3em;
 	}
 
 	header section {

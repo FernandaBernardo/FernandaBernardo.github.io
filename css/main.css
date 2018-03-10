@@ -79,11 +79,16 @@ footer p {
 	}
 	
 	.navigation ul {
-		justify-content: space-around;
+		display: block;
+		padding-left: 2em;
+		padding-right: 2em;
+		margin-bottom: 0;
 	}
 
 	.navigation li {
-		flex-basis: 25%;
 		margin-left: 0;
+		margin-bottom: 1em;
 	}
+
+
 }

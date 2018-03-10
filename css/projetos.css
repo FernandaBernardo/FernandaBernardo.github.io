@@ -37,3 +37,9 @@
 .project .contribute a:hover {
     color: #4A86E8;
 }
+
+@media(max-width: 600px) {
+    .projects {
+        margin-top: 2em;
+    }
+}
