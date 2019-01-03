@@ -102,6 +102,10 @@ section div {
 	background-image: url("../img/wordpress.svg");
 }
 
+.youtube a {
+	background-image: url("../img/youtube.svg");
+}
+
 .info h2 {
 	text-align: left;
 	color: #4A86E8;
