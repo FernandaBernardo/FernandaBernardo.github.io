@@ -21,8 +21,16 @@
 				<li><a href="./projetos.html">Projetos</a></li>
 			</ul>
 		</nav>
+        <section class="info">
+            <p><span id="n-talks"></span> palestras.</p>
+            <p><span>10</span> cidades.</p>
+            <!-- feira de santana / BH / fortaleza / SP / SJC / campinas / maceio / porto alegre / florianópolis / sorocaba -->
+        </section>
         <!-- <section class="next-talks">
             <h2>Próximas Palestras</h2>
+            <article class="talk">
+
+            </article>
         </section> -->
         <section class="timeline">
             <h2>Palestras</h2>
@@ -424,5 +432,10 @@
 			ga('create', 'UA-105607442-1', 'auto');
 			ga('send', 'pageview');
 		</script>
+        <script>
+            var events = document.querySelectorAll('.event').length;
+            var nTalks = document.getElementById('n-talks');
+            nTalks.textContent = events;
+        </script>
     </body>
 </html>

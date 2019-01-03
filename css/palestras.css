@@ -1,3 +1,35 @@
+.info {
+	padding: 200px 2em;
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+.info::before {
+	content: "";
+	background-image: url('../img/map.jpg');
+	background-position: center;
+	background-size: cover;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+.info p {
+	font-size: 2.6em;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 0.5em;
+	opacity: 1;
+	margin-bottom: 0.8em;
+	color: #fff;
+	text-shadow: 5px 3px 15px #000;
+}
+
 .next-talks {
 	background-color: #192539;
 	color: #fff;
@@ -5,13 +37,13 @@
 }
 
 .talk {
-    background-color: #fff;
-    width: 50%;
-    border-radius: 10px;
-    padding: 1em;
-    color: #192539;
-    line-height: 1.3;
-    margin: 1.5em auto;
+	background-color: #fff;
+	width: 50%;
+	border-radius: 10px;
+	padding: 1em;
+	color: #192539;
+	line-height: 1.3;
+	margin: 1.5em auto;
 }
 
 .talk a {
