@@ -94,6 +94,10 @@ header section {
 	background-image: url("../img/wordpress.svg");
 }
 
+.youtube a {
+	background-image: url("../img/youtube.svg");
+}
+
 @media(max-width: 600px) {
 	header {
 		margin-top: 5em;
