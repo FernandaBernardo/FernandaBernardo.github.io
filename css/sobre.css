@@ -82,6 +82,10 @@ section div {
 	background-image: url("../img/twitter.svg");
 }
 
+.instagram a {
+	background-image: url("../img/instagram.svg");
+}
+
 .github a {
 	background-image: url("../img/github.svg");
 }
