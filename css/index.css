@@ -78,6 +78,10 @@ header section {
 	background-image: url("../img/instagram.svg");
 }
 
+.anchor a {
+	background-image: url("../img/anchor.png");
+}
+
 .github a {
 	background-image: url("../img/github.svg");
 }
