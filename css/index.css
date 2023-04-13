@@ -98,6 +98,10 @@ header section {
 	background-image: url("../img/linkedin.svg");
 }
 
+.substack a {
+	background-image: url("../img/substack.png");
+}
+
 .wordpress a {
 	background-image: url("../img/wordpress.svg");
 }
