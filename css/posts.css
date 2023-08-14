@@ -18,12 +18,12 @@ label {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
-    background-color: #192539;
+    background-color: #570BB7;
     color: #fff;
 }
 
 label:hover {
-	background-color: #4A86E8;
+	background-color: #8384E6;
 }
 
 label[for="posts-tech"] {
@@ -38,33 +38,33 @@ label[for="posts-diabetes"] {
 
 input#posts-diabetes:checked ~ .posts-type label[for="posts-diabetes"],
 input#posts-tech:checked ~ .posts-type label[for="posts-tech"] {
-	background-color: #4A86E8;
+	background-color: #8384E6;
 }
 
 .posts-type {
 	display: flex;
 	justify-content: center;
 	width: 50%;
-	margin: 0 auto;
+	margin: 1em auto 0;
 }
 
 .posts {
 	overflow: hidden;
-	background-color: #192539;
+	background-color: #570BB7;
 	display: none;
 	padding-top: 2em;
 }
 
 .diabetes {
-	background-color: #4A86E8;
+	background-color: #8384E6;
 }
 
 .diabetes .post {
-	border-color: #4A86E8;
+	border-color: #8384E6;
 }
 
 .post {
-	border: 2px solid #192539;
+	border: 2px solid #570BB7;
 	border-radius: 10px;
 	padding: 2em;
 	margin-bottom: 2em;
@@ -73,7 +73,7 @@ input#posts-tech:checked ~ .posts-type label[for="posts-tech"] {
 
 .post a {
 	text-decoration: none;
-	color: #4A86E8;
+	color: #8384E6;
 }
 
 .post a:hover {
@@ -97,11 +97,11 @@ input#posts-tech:checked ~ .posts-type label[for="posts-tech"] {
 
 .post p > a {
 	text-decoration: underline;
-	color: #4A86E8;
+	color: #8384E6;
 }
 
 .post p > a:hover {
-	color: #192539;
+	color: #570BB7;
 }
 
 @media(max-width: 600px) {

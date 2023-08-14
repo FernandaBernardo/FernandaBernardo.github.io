@@ -62,7 +62,7 @@
 }
 
 .timeline {
-	color: #192539;
+	color: #8384E6;
 	position: relative;
 	padding: 1em 0;
 }
@@ -70,7 +70,7 @@
 .timeline:before {
 	content: "";
 	width: 50%;
-	border-right: 6px solid #192539;
+	border-right: 6px solid #93B9E9;
 	display: block;
 	height: calc(100% - 5.5em);
 	position: absolute;
@@ -88,7 +88,7 @@
 	height: 16px;
 	position: absolute;
 	border-radius: 100%;
-	border: 6px solid #192539;
+	border: 6px solid #93B9E9;
 	background: #fff;
 	top: 50%;
 	left: calc(100% + 4px);
@@ -96,7 +96,7 @@
 }
 
 .bubble {
-	background-color: #192539;
+	background-color: #93B9E9;
 	color: #fff;
 	border-radius: 10px;
 	position: relative;
@@ -110,7 +110,7 @@
 
 .bubble a {
 	text-decoration: none;
-	color: #4A86E8;
+	color: #570BB7;
 	word-break: break-word;
 }
 
@@ -149,12 +149,12 @@
 
 .event:nth-child(even) .bubble:after {
 	left: -10px;
-	border-right: 10px solid #192539;
+	border-right: 10px solid #93B9E9;
 }
 
 .event:nth-child(odd) .bubble:after {
 	right: -10px;
-	border-left: 10px solid #192539;
+	border-left: 10px solid #93B9E9;
 }
 
 @media(max-width: 600px) {

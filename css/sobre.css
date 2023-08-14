@@ -3,14 +3,13 @@ body {
 }
 
 section {
-	color: #2c3e50;
 	margin: 5em 3em;
 	font-family: Montserrat, sans-serif;
 }
 
 section h1 {
 	font-size: 3em;
-	color: #4A86E8;
+	color: #8384E6;
 	font-weight: 700;
 	margin: 0.8rem 0;
 }
@@ -116,7 +115,7 @@ section div {
 
 .info h2 {
 	text-align: left;
-	color: #4A86E8;
+	color: #8384E6;
 	font-weight: bold;
 }
 

@@ -19,10 +19,11 @@ h2 {
 }
 
 .navigation ul {
+	position: relative;
 	display: flex;
     justify-content: flex-end;
-	margin-bottom: 2em;
-	margin-top: 2em;
+	margin-bottom: 3em;
+	margin-top: 3em;
 }
 
 .navigation li:first-child {
@@ -39,32 +40,32 @@ h2 {
 	padding-top: 1em;
     padding-bottom: 1em;
     display: inline-block;
-    color: #4A86E8;
+    color: #fff;
     text-align: center;
     text-decoration: none;
 	width: 100%;
 	font-size: 1.2em;
 	border-radius: 10px;
-	border: 1px solid #4A86E8;
+	border: 1px solid #fff;
 }
 
 .navigation a:hover {
-	background-color: #4A86E8;
+	background-color: #8384E6;
 	color: #fff;
 }
 
 .navigation a.active {
-    background-color: #4A86E8;
+    background-color: #8384E6;
 	color: #fff;
 }
 
 .navigation a.active:hover {
-    background-color: #fff;
-	color: #4A86E8;
+    background-color: transparent;
+	color: #fff;
 }
 
 footer {
-	background-color: #233140;
+	background-color: #1F2047;
 }
 
 footer p {
@@ -72,6 +73,41 @@ footer p {
     text-align: center;
     padding: 1em;
 }
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.base {
+    position: absolute;
+    filter: blur(100px);
+    opacity: 0.8;
+}
+
+.one {
+    width: 50vw;
+    height: 50vh;
+    background-color: #420097;
+    left: -20vw;
+    top: -15vh;
+}
+
+.two {
+    width: 80vw;
+    height: 80vh;
+    background-color: #A866FD;
+    left: 20vw;
+    top: -15vh;
+}
+
+.three {
+    width: 50vw;
+    height: 50vh;
+    background-color: #179DC7;
+    left: 70vw;
+    top: -15vh;
+} 
 
 @media(max-width: 600px) {
     .container {
@@ -89,6 +125,4 @@ footer p {
 		margin-left: 0;
 		margin-bottom: 1em;
 	}
-
-
 }

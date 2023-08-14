@@ -5,7 +5,6 @@
 }
 
 .course {
-    border: 2px solid #192539;
     border-radius: 10px;
     flex-basis: 30%;
     margin-left: 1em;
@@ -51,19 +50,19 @@
 }
 
 a.sale {
-    background-color: #E95355;
+    background-color: #B187F5;
     color: #fff;
     border-radius: 5px;
     margin: 0 1em 1em;
     display: block;
     padding: 1em;
-    border: 1px solid #E95355;
+    border: 1px solid #B187F5;
     text-align: center;
 }
 
 .sale:hover {
     background-color: #fff;
-    color: #E95355;
+    color: #B187F5;
 }
 
 .sale > span {

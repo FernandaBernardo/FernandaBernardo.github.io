@@ -3,7 +3,7 @@
 }
 
 .project {
-    border: 2px solid #192539;
+    border: 2px solid #570BB7;
     border-radius: 10px;
     margin: 2em auto;
     padding: 1em;
@@ -22,20 +22,20 @@
 
 .project .contribute {
     margin-top: 0.7em;
-    color: #E95355;
+    color: #B187F5;
     font-weight: bold;
 }
 
 .project a {
     display: inline-block;
-    color: #192539;
+    color: #570BB7;
     font-weight: normal;
 }
 
 .project h2:hover,
 .project a > p:hover,
 .project .contribute a:hover {
-    color: #4A86E8;
+    color: #8384E6;
 }
 
 @media(max-width: 600px) {
