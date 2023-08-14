@@ -125,4 +125,16 @@ footer p {
 		margin-left: 0;
 		margin-bottom: 1em;
 	}
+
+	.one {
+		height: 100vh;
+	}
+
+	.two {
+		height: 160vh;
+	}
+
+	.three {
+		height: 100vh;
+	}
 }
