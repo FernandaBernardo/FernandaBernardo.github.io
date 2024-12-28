@@ -17,6 +17,13 @@ img {
     display: block;
 }
 
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
 /* Container */
 .container {
     margin: 0 auto;
