@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroGuia - Seu Mapa Astral Transformador</title>
+    <link rel="stylesheet" href="astroguia.css">
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <!-- <div class="container"> -->
+            <img src="logo.png" alt="AstroGuia Logo" class="navbar-logo">
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#benefits">Benefícios</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#product-details">O Que Receberá</a></li>
+                <li><a href="#purchase" class="cta-button-nav">Comprar</a></li>
+            </ul>
+        <!-- </div> -->
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- <img src="logo.png" alt="AstroGuia Logo" class="hero-logo"> -->
+                <h1>Descubra o AstroGuia</h1>
+                <p>🌟 Explore seu potencial, entenda seus desafios e alinhe-se ao seu propósito com um mapa astral exclusivo e detalhado.</p>
+                <a href="#purchase" class="cta-button">Quero meu mapa astral agora!</a>
+            </div>
+            <!-- <div class="hero-image">
+                <img src="hero-image.jpg" alt="Mapa Astral Personalizado">
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Sobre o Produto -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>O Que é o AstroGuia?</h2>
+            <div class="about-content">
+                <!-- <img src="about-image.jpg" alt="Sobre o AstroGuia" class="about-image"> -->
+                <p>O AstroGuia é mais do que um mapa astral. É um guia cósmico personalizado que traduz o posicionamento dos astros em orientações práticas, ajudando você a tomar melhores decisões e alcançar seu potencial máximo. Combinando astrologia moderna com análise detalhada, o AstroGuia é feito sob medida para você.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Por Que Escolher o AstroGuia?</h2>
+            <div class="benefit-list">
+                <div class="benefit-item">
+                    <h3>🔮 Descubra Sua Essência</h3>
+                    <p>Entenda suas características únicas, pontos fortes e desafios.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🎯 Orientação Profissional</h3>
+                    <p>Receba um guia prático e detalhado sobre sua vida profissional.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>🌌 Panorama 2025</h3>
+                    <p>Saiba o que esperar do próximo ano e como aproveitar ao máximo suas energias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>O Que Dizem Nossos Clientes</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="client1.jpg" alt="Cliente 1" class="testimonial-avatar">
+                        <span class="testimonial-name">Júlia N.</span>
+                    </div>
+                    <p>“O panorama para 2025 foi muito certeiro. Me ajudou a planejar e tomar melhores decisões.”</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="client2.jpg" alt="Cliente 2" class="testimonial-avatar">
+                        <span class="testimonial-name">Rafael M.</span>
+                    </div>
+                    <p>“O guia profissional foi essencial para eu entender meu propósito. Recomendo!”</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-header">
+                        <img src="client3.jpg" alt="Cliente 3" class="testimonial-avatar">
+                        <span class="testimonial-name">Amanda P.</span>
+                    </div>
+                    <p>“Simplesmente transformador! Entendi meus desafios e como superá-los.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que você vai receber -->
+    <section class="product-details" id="product-details">
+        <div class="container">
+            <h2>O Que Está Incluído?</h2>
+            <ul>
+                <li>📜 Um PDF completo com análises personalizadas de amor, carreira e saúde.</li>
+                <li>📖 Panorama exclusivo para 2025, com tendências e previsões práticas.</li>
+                <li>🌟 Orientação profissional detalhada, com insights para crescimento.</li>
+                <li>🎁 Sugestões de livros e práticas para desenvolver autoconhecimento.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Preço e Compra -->
+    <section class="pricing" id="purchase">
+        <div class="container">
+            <h2>Seu Investimento</h2>
+            <p><strong>Apenas R$149,90</strong> para um mapa astral exclusivo que pode transformar sua vida.</p>
+            <a href="https://pagamento.com/astroguia" class="purchase-button">Quero meu mapa astral agora!</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
