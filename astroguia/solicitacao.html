@@ -58,15 +58,27 @@
         }
 
         footer {
+            background: #2c2f33;
+            color: #F9F9F9;
             text-align: center;
-            padding: 20px 0;
-            background: #4A5F9E;
-            color: #F7F6F2;
-            margin-top: 20px;
+            padding: 20px;
         }
 
-        footer p {
-            margin: 0;
+        footer .social-links {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        footer .social-links a img {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-links a img:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -86,7 +98,20 @@
         </div>
     </main>
     <footer>
-        <p>&copy; <script>now = new Date; document.write(now.getFullYear());</script> AstroGuia. Feito com 💫 para iluminar seu caminho.</p>
+        <div class="container">
+            <p>&copy; 2023 AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
+                    <img src="../img/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/seuusuario" target="_blank">
+                    <img src="../img/facebook.svg" alt="Facebook">
+                </a>
+                <a href="mailto:astroguia@fernandabernardo.com.br" target="_blank">
+                    <img src="../img/email-invertido.png" alt="E-mail">
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

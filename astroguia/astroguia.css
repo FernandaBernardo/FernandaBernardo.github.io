@@ -282,10 +282,27 @@ button {
 
 /* Footer */
 footer {
-    background: #2D3E50;
+    background: #2c2f33;
     color: #F9F9F9;
     text-align: center;
     padding: 20px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer .social-links a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-links a img:hover {
+    transform: scale(1.2);
 }
 
 /* Responsividade */
