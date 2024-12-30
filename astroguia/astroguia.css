@@ -258,26 +258,77 @@ button {
 }
 
 /* Pricing Section */
+/* Pricing Section */
 .pricing {
-    background: #E5C07B;
-    color: #2D3E50;
+    background: #e5c07b; /* Fundo amarelo */
     text-align: center;
     padding: 30px 20px;
+    border-radius: 10px;
+    color: #4a5f9e;
 }
 
 .pricing h2 {
-    margin-bottom: 1em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4a5f9e;
+}
+
+.price-description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #4a5f9e;
+}
+
+.price-box {
+    display: inline-block;
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #4a5f9e;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.original-price {
+    font-size: 1.2em;
+    color: #999;
+    text-decoration: line-through;
+    margin: 5px 0;
+}
+
+.promotional-price {
+    font-size: 2em;
+    color: #4a5f9e;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.promotional-price .highlight {
+    color: #4a5f9e;
+}
+
+.limited-time {
+    font-size: 1em;
+    color: #2c2f33;
+    margin-bottom: 20px;
 }
 
 .purchase-button {
     background: #4a5f9e;
-    color: #f7f6f2;
+    color: #fff;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 1.5em;
-    display: inline-block;
+    font-size: 1.2em;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-button:hover {
+    background: #b399d4;
+    transform: scale(1.05);
+    color: #f7f6f2;
 }
 
 /* Footer */
