@@ -3,170 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AstroGuia - Seu Mapa Astral Transformador</title>
+    <title>AstroGuia - Transforme sua Vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Berkshire+Swash&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="astroguia.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Menu de Navegação -->
-    <nav class="navbar">
-            <a href="./index.html"><img src="logo.png" alt="AstroGuia Logo" class="navbar-logo"></a>
-            <button class="menu-toggle" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#benefits">Benefícios</a></li>
-                <li><a href="#testimonials">Depoimentos</a></li>
-                <li><a href="#product-details">O Que Receberá</a></li>
-                <li><a href="#purchase" class="cta-button-nav">Comprar</a></li>
-            </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <img src="banner.png" alt="AstroGuia Logo" class="hero-logo">
+    <!-- BLOCO 1: Hero Section -->
     <header class="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1>Descubra o AstroGuia</h1>
-                <p>🌟 Explore seu potencial, entenda seus desafios e alinhe-se ao seu propósito com um mapa astral exclusivo e detalhado.</p>
-                <a href="#purchase" class="cta-button">Quero meu mapa astral agora!</a>
-            </div>
-            <!-- <div class="hero-image">
-                <img src="hero-image.jpg" alt="Mapa Astral Personalizado">
-            </div> -->
+            <img src="logo-invertido.png" alt="AstroGuia Logo" class="logo">
+            <h1>Descubra como os astros podem revelar os caminhos para sua <strong>prosperidade</strong> e <strong>felicidade</strong>!</h1>
+            <video controls class="video-explicativo">
+                <source src="video-explicativo.mp4" type="video/mp4">
+                Seu navegador não suporta o vídeo.
+            </video>
+            <a href="#checkout" class="cta-button">Quero saber o meu destino</a>
         </div>
     </header>
 
-    <!-- Sobre o Produto -->
-    <section class="about" id="about">
+    <!-- BLOCO 2: Dores do Público -->
+    <section class="dores">
         <div class="container">
-            <h2>O Que é o AstroGuia?</h2>
-            <div class="about-content">
-                <!-- <img src="about-image.jpg" alt="Sobre o AstroGuia" class="about-image"> -->
-                <p>O AstroGuia é mais do que um mapa astral. É um guia cósmico personalizado que traduz o posicionamento dos astros em orientações práticas, ajudando você a tomar melhores decisões e alcançar seu potencial máximo. Combinando astrologia moderna com análise detalhada, o AstroGuia é feito sob medida para você.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefícios -->
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <h2>Por Que Escolher o AstroGuia?</h2>
-            <div class="benefit-list">
-                <div class="benefit-item">
-                    <h3>🔮 Descubra Sua Essência</h3>
-                    <p>Entenda suas características únicas, pontos fortes e desafios.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>🎯 Orientação Profissional</h3>
-                    <p>Receba um guia prático e detalhado sobre sua vida profissional.</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>🌌 Panorama 2025</h3>
-                    <p>Saiba o que esperar do próximo ano e como aproveitar ao máximo suas energias.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Depoimentos -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2>O Que Dizem Nossos Clientes</h2>
-            <div class="testimonial-list">
-                <div class="testimonial-item">
-                    <div class="testimonial-header">
-                        <img src="depoimento-1.png" alt="Cliente 1" class="testimonial-avatar">
-                        <span class="testimonial-name">Bruno B.</span>
-                    </div>
-                    <p>"Eu confesso que não acreditava muito em astrologia e nunca tive interesse em fazer um mapa astral. Porém, depois de adquirir o meu no Astroguia, por indicação, fui surpreendido com os resultados. Muitas informações realmente bateram com a minha personalidade e com a minha trajetória de vida. Descobri que estou no caminho certo em vários aspectos e também encontrei orientações valiosas sobre áreas que preciso melhorar. Não sou de recomendar com frequência, mas posso dizer que esse foi um investimento que valeu a pena."</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-header">
-                        <img src="depoimento-2.png" alt="Cliente 2" class="testimonial-avatar">
-                        <span class="testimonial-name">Ana C.</span>
-                    </div>
-                    <p>“O AstroGuia foi um divisor de águas para mim. Sempre me senti perdida em relação às minhas escolhas, mas o mapa trouxe clareza e direção. O panorama de 2025 me ajudou a planejar metas alinhadas com meu propósito, e a orientação profissional foi como uma bússola para minha carreira. Recomendo para todos que buscam autoconhecimento de verdade!”</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-header">
-                        <img src="depoimento-3.png" alt="Cliente 3" class="testimonial-avatar">
-                        <span class="testimonial-name">Manuela P.</span>
-                    </div>
-                    <p>“Receber meu mapa astral personalizado foi como olhar para um espelho da minha alma. Entendi desafios que sempre ignorei e descobri talentos que nunca valorizei. O guia prático com ações e livros recomendados foi o toque especial que fez toda a diferença. É muito mais do que astrologia; é um manual de vida.”</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- O que você vai receber -->
-    <section class="product-details" id="product-details">
-        <div class="container">
-            <h2>O Que Está Incluído?</h2>
+            <h2>Você se sente assim?</h2>
             <ul>
-                <li>📜 Um PDF completo com análises personalizadas de amor, carreira e saúde.</li>
-                <li>📖 Panorama exclusivo para 2025, com tendências e previsões práticas.</li>
-                <li>🌟 Orientação profissional detalhada, com insights para crescimento.</li>
-                <li>🎁 Sugestões de livros e práticas para desenvolver autoconhecimento.</li>
+                <li>Sente que algo está bloqueando sua felicidade e não sabe como encontrar seu verdadeiro propósito?</li>
+                <li>Está perdido, buscando respostas sobre o futuro e como alinhar sua vida com o destino?</li>
+                <li>Se sente desconectado de sua essência e deseja uma vida mais harmoniosa e equilibrada?</li>
+                <li>Sonha em entender as mensagens do universo, mas não encontrou a orientação certa?</li>
             </ul>
+            <a href="#checkout" class="cta-button">Quero descobrir o meu caminho</a>
+            <p class="note">Temos uma boa notícia para você... Continue lendo!</p>
         </div>
     </section>
 
-   <!-- Preço e Compra -->
-    <section class="pricing" id="purchase">
+    <!-- BLOCO 3: Depoimentos -->
+    <section class="depoimentos" id="depoimentos">
         <div class="container">
-            <h2>Seu Investimento</h2>
-            <p class="price-description">Adquira um mapa astral completo e personalizado, com análises profundas e orientações práticas para transformar sua vida.</p>
-            
-            <!-- Destaque de Preços -->
-            <div class="price-box">
-                <p class="original-price">De: <span class="strikethrough">R$249,90</span></p>
-                <p class="promotional-price">Por: <span class="highlight">R$149,90</span></p>
+            <h2>Hoje é o seu último dia se sentindo perdido</h2>
+            <p>A partir de agora, o seu caminho será guiado pelas estrelas, como aconteceu com eles:</p>
+            <div class="depoimentos-list">
+                <div class="depoimento-item">
+                    <img src="depoimento-1.jpg" alt="Cliente 1" class="depoimento-avatar">
+                    <p>“Transformador! Meu mapa astral me trouxe uma clareza que eu nunca imaginei.”</p>
+                    <span>- Rosana N.</span>
+                </div>
+                <div class="depoimento-item">
+                    <img src="depoimento-2.jpg" alt="Cliente 1" class="depoimento-avatar">
+                    <p>“Consegui alinhar minhas decisões com meu propósito. Simplesmente incrível!”</p>
+                    <span>- Rafael M.</span>
+                </div>
+                <div class="depoimento-item">
+                    <img src="depoimento-3.jpg" alt="Cliente 1" class="depoimento-avatar">
+                    <p>“Os insights astrológicos foram certeiros e práticos para o meu dia a dia.”</p>
+                    <span>- Juliana P.</span>
+                </div>
             </div>
-    
-            <p class="limited-time">Oferta válida por tempo limitado!</p>
-    
-            <!-- Botão de Compra -->
-            <a href="./solicitacao.html" class="purchase-button">Quero meu mapa astral agora!</a>
+            
+            <h3>Essa é a realidade!</h3>
+            <p>Pessoas que têm acesso a esse conhecimento astrológico estão se <strong>reconectando</strong> com seu <strong>verdadeiro propósito</strong> e alcançando a <strong>paz interior</strong> que sempre buscaram.</p>
+            <p class="impacto">Aqui, você encontra respostas que vão iluminar seu caminho, sem mais indecisões ou frustrações.</p>
+            <p>Quem não enxergar isso, estará deixando escapar a <strong>chave</strong> para um futuro mais <strong>próspero</strong> e <strong>equilibrado!</strong></p>
+            <p>Transformação real dos nossos clientes:</p>
+            <p class="dynamic-numbers">+<span id="num-transformacoes">0</span> vidas transformadas!</p>
+        </div>
+    </section>
+
+    <!-- BLOCO 4: Prazo -->
+    <section class="prazo">
+        <div class="container">
+            <h2>O seu caminho de autoconhecimento começa agora</h2>
+            <p>Em menos de 5 dias úteis, você terá as respostas astrológicas que vão direcionar sua vida para equilíbrio e felicidade!</p>
+        </div>
+    </section>
+
+    <!-- BLOCO 5: Processo -->
+    <section class="processo">
+        <div class="container">
+            <h2>Como isso vai acontecer?</h2>
+            <p>Através de leituras astrológicas personalizadas, você terá acesso a informações poderosas que vão te mostrar o caminho para o sucesso e a paz interior. Simples e prático!</p>
+            <a href="#checkout" class="cta-button">Quero começar agora</a>
+        </div>
+    </section>
+
+    <!-- BLOCO 6: Benefícios -->
+    <section class="beneficios">
+        <div class="container">
+            <h2>O que você vai descobrir?</h2>
+            <ul>
+                <li>Como usar o poder da astrologia para decisões mais assertivas.</li>
+                <li>Como atrair oportunidades e alcançar sucesso.</li>
+                <li>Práticas simples baseadas no seu mapa astral para equilíbrio.</li>
+            </ul>
+            <a href="#checkout" class="cta-button">Quero transformar minha vida</a>
+        </div>
+    </section>
+
+    <!-- BLOCO 7: Garantia -->
+    <section class="garantia">
+        <div class="container">
+            <h2>Transformação garantida ou seu dinheiro de volta!</h2>
+            <p>Teste nossas orientações por 15 dias e veja os resultados. Se não estiver satisfeito, devolvemos seu investimento.</p>
+        </div>
+    </section>
+
+    <!-- BLOCO 8: FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <details>
+                <summary>O serviço realmente funciona?</summary>
+                <p>Sim! Baseado em conhecimento astrológico e feedback de clientes reais.</p>
+            </details>
+            <details>
+                <summary>Já fiz outras leituras, qual a diferença?</summary>
+                <p>Personalização única, levando em conta seu mapa astral detalhado.</p>
+            </details>
+            <details>
+                <summary>Preciso de conhecimento prévio?</summary>
+                <p>Não! Nosso material é acessível e fácil de entender.</p>
+            </details>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2023 AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
-                    <img src="../img/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/astroguia.astrologia" target="_blank">
-                    <img src="../img/facebook.svg" alt="Facebook">
-                </a>
-                <a href="mailto:astroguia@fernandabernardo.com.br" target="_blank">
-                    <img src="../img/email-invertido.png" alt="E-mail">
-                </a>
+            <div class="container">
+                <p>&copy; 2023 AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
+                        <img src="../img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/astroguia.astrologia" target="_blank">
+                        <img src="../img/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="mailto:astroguia@fernandabernardo.com.br" target="_blank">
+                        <img src="../img/email-invertido.png" alt="E-mail">
+                    </a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
     <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+       document.addEventListener("DOMContentLoaded", () => {
+        // Função para iniciar a animação dos números
+        const incrementNumber = (numberElement, target) => {
+            let count = 0;
 
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+            const updateNumber = () => {
+                if (count < target) {
+                    count += 5; // Incremento ajustável
+                    numberElement.textContent = count;
+                    setTimeout(updateNumber, 50); // Ajuste a velocidade
+                } else {
+                    numberElement.textContent = target;
+                }
+            };
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            updateNumber();
+        };
 
-        ga('create', 'UA-105607442-1', 'auto');
-        ga('send', 'pageview');
+        // Intersection Observer para monitorar a seção "depoimentos"
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Inicia a animação quando a seção entra no viewport
+                        const numberElement = document.getElementById("num-transformacoes");
+                        if (numberElement) {
+                            incrementNumber(numberElement, 500); // Alvo ajustável
+                        }
+                        observer.unobserve(entry.target); // Para observar apenas uma vez
+                    }
+                });
+            },
+            { threshold: 0.5 } // Inicia quando 50% da seção está visível
+        );
+
+        // Observe a seção "depoimentos"
+        const depoimentosSection = document.getElementById("depoimentos");
+        if (depoimentosSection) {
+            observer.observe(depoimentosSection);
+        }
+    });
     </script>
 </body>
 </html>

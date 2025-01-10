@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numerologia - Missão de Vida</title>
+</head>
+<body>
+  <h1>Calculadora de Numerologia</h1>
+  <label for="nome">Digite o nome completo:</label>
+  <input type="text" id="nome" placeholder="Ex: João da Silva"><br><br>
+
+  <label for="dataNascimento">Digite a data de nascimento (DD/MM/AAAA):</label>
+  <input type="text" id="dataNascimento" placeholder="Ex: 20/07/1994"><br><br>
+
+  <button onclick="calcularValores()">Calcular Numerologia</button>
+  
+  <h2>Resultado:</h2>
+  <pre id="resultado"></pre>
+
+  <script>
+    function calcularValores() {
+      const nome = document.getElementById("nome").value.toUpperCase();
+      const dataNascimento = document.getElementById("dataNascimento").value;
+
+      // Tabela de correspondência
+      const tabela = {
+        A: 1, B: 2, C: 3, D: 4, E: 5, F: 6, G: 7, H: 8, I: 9,
+        J: 1, K: 2, L: 3, M: 4, N: 5, O: 6, P: 7, Q: 8, R: 9,
+        S: 1, T: 2, U: 3, V: 4, W: 5, X: 6, Y: 7, Z: 8
+      };
+
+      const significadosReduzidos = {
+        1: "Ação",
+        2: "Harmonia",
+        3: "Comunicação",
+        4: "Trabalho",
+        5: "Movimento",
+        6: "Família",
+        7: "Espírito",
+        8: "Matéria",
+        9: "Conhecimento"
+      };
+
+      const significadosMissao = {
+        1: "Empreendedor",
+        2: "Intuitivo",
+        3: "Comunicador",
+        4: "Líder",
+        5: "Religioso",
+        6: "Familiar",
+        7: "Conquistador",
+        8: "Justo",
+        9: "Paciente",
+        10: "Fiel",
+        11: "Inteligente",
+        12: "Analista",
+        13: "Certo",
+        14: "Equilibrado",
+        15: "Prazeroso",
+        16: "Organizado",
+        17: "Positivo",
+        18: "Místico",
+        19: "Amoroso",
+        20: "Sábio",
+        21: "Realizado",
+        22: "Livre"
+      };
+
+      const vogais = ["A", "E", "I", "O", "U"];
+      let somaVogais = 0, somaConsoantes = 0, valorTotal = 0, valorPrimeiraLetra = 0;
+
+      // Processa nome
+      for (let i = 0; i < nome.length; i++) {
+        const char = nome[i];
+        if (tabela[char] !== undefined) {
+          const valorLetra = tabela[char];
+          valorTotal += valorLetra;
+          if (i === 0) valorPrimeiraLetra = valorLetra;
+          if (vogais.includes(char)) somaVogais += valorLetra;
+          else somaConsoantes += valorLetra;
+        }
+      }
+
+      // Reduz valores
+      const reduzirNumero = (num, limite = 9) => {
+        while (num > limite) {
+          num = num.toString().split("").reduce((acc, digit) => acc + parseInt(digit), 0);
+        }
+        return num;
+      };
+
+      const vogaisReduzidas = reduzirNumero(somaVogais);
+      const consoantesReduzidas = reduzirNumero(somaConsoantes);
+      const totalReduzido = reduzirNumero(valorTotal);
+      const primeiraLetraReduzida = reduzirNumero(valorPrimeiraLetra);
+
+      // Processa data de nascimento
+      const [dia, mes, ano] = dataNascimento.split("/").map(Number);
+      const somaNascimento = dia + mes + ano;
+      const missaoDeVida = reduzirNumero(somaNascimento, 22);
+      const expressaoInterna = reduzirNumero(dia, 22);
+      const expressaoExterna = reduzirNumero(mes, 22);
+
+      // Exibe resultados
+      const resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.textContent = `
+Número da Motivação (ou Alma) - Vogais: ${somaVogais} (Reduzido: ${vogaisReduzidas}, Significado: ${significadosReduzidos[vogaisReduzidas]})
+Número da Impressão (ou Personalidade) - Consoantes: ${somaConsoantes} (Reduzido: ${consoantesReduzidas}, Significado: ${significadosReduzidos[consoantesReduzidas]})
+Número da Expressão (ou Destino) - Total: ${valorTotal} (Reduzido: ${totalReduzido}, Significado: ${significadosReduzidos[totalReduzido]})
+
+Missão de Vida: ${missaoDeVida} (${significadosMissao[missaoDeVida]})
+Expressão Interna (Dia): ${expressaoInterna} (${significadosMissao[expressaoInterna]})
+Expressão Externa (Mês): ${expressaoExterna} (${significadosMissao[expressaoExterna]})
+      `;
+    }
+  </script>
+</body>
+</html>
