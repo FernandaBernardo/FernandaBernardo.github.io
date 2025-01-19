@@ -18,6 +18,29 @@ body {
     padding: 20px;
 }
 
+/* Geral settings */
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: "Berkshire Swash", serif;
+}
+
+section {
+    padding: 50px 70px;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+strong {
+    font-weight: 600;
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -41,7 +64,6 @@ body {
 
 .hero h1 strong {
     color: #FFD700;
-    font-weight: 600;
 }
 
 .video-explicativo {
@@ -61,7 +83,7 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     transition: background 0.3s;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -71,27 +93,22 @@ body {
 }
 
 /* Dores Section */
-.dores {
-    background-color: #ffecf0;
-    padding: 50px 20px;
-    text-align: center;
+.dores, .beneficios, .bonus {
     background: linear-gradient(180deg, #473874, #b399d4)
 }
 
-.dores h2 {
+.dores h2, .beneficios h2, .bonus h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: "Berkshire Swash", serif;
     color: #ff7eb3;
 }
 
-.dores ul {
+.dores ul, .beneficios ul {
     list-style-type: none;
     margin: 20px 0;
     padding: 0;
 }
 
-.dores ul li {
+.dores ul li, .beneficios ul li {
     margin: 2em 0;
     padding: 1em;
     font-size: 1.2rem;
@@ -108,44 +125,33 @@ body {
 }
 
 /* Depoimentos Section */
-.depoimentos {
+.depoimentos, .exclusivo, .oferta-limitada {
     background: linear-gradient(180deg, #ff7eb3, #b399d4, #473874);
-    padding: 50px 20px;
 }
 
-.depoimentos h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Berkshire Swash", serif;
-    font-size: 2em;
-}
-
-.depoimentos h2 + p {
-    text-align: center;
+.exclusivo .list {
+    margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 1.2em;
-    font-style: italic;
-
 }
 
-.depoimentos-list {
+.list {
     display: flex;
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.depoimento-item {
+.list-item {
+    align-content: center;
     background: #fdfdfd;
     border: 2px solid #b399d4;
     padding: 40px;
     border-radius: 10px;
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.depoimento-item:hover {
+.list-item:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -158,7 +164,7 @@ body {
     margin-bottom: 0.7em;
 }
 
-.depoimento-item:hover .depoimento-avatar {
+.list-item:hover .depoimento-avatar {
     border: 3px solid #473874;
 }
 
@@ -166,7 +172,6 @@ body {
     font-family: "Berkshire Swash", serif;
     font-weight: 600;
     font-size: 2.5em;
-    text-align: center;
     margin-top: 60px;
     margin-bottom: 40px;
 }
@@ -175,7 +180,6 @@ body {
     font-size: 1.5em;
     font-style: italic;
     margin-bottom: 40px;
-    text-align: center;
     font-weight: 500; 
 }
 
@@ -192,11 +196,10 @@ body {
     margin-bottom: 20px;
 }
 
-.depoimentos .impacto {
+.impacto {
     background-color: #473874;
     color: #F8F9FA;
     padding: 1em 2em;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     font-weight: 600;
@@ -208,36 +211,181 @@ p + p.dynamic-numbers {
     margin-top: 20px;
     font-size: 3rem;
     font-weight: 600;
-    text-align: center;
     color: #FFD700;
     text-shadow: 1px 1px 1px black;
 }
 
 /* Prazo Section */
 .prazo {
-    background-color: #c8e6c9;
-    padding: 50px 20px;
+    background: linear-gradient(180deg, #ff7eb3,  #ff7eb3, #b399d4);  
+}
+
+/* Processo Section */
+.processo {
+    background-color: #473874;
+    background-image: url(img/processo.png);
+    background-size: cover;
+    color: #fff;
+}
+
+.processo .impacto {
+    background-color: #b399d4;
+}
+
+.processo p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Beneficios Section */
+
+.beneficios .text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.beneficios ul + p {
+    color: #fff;
+}
+
+.bonus {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.prazo h2 {
-    font-size: 2rem;
+.bonus p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.bonus-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.bonus-item {
+    background-color: #fff;
+    border: 2px solid #d8c4f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 0 40%;
+}
+
+.garantia {
+    background: linear-gradient(0deg, #ff7eb3, #b399d4);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.garantia h2, .oferta-limitada h2 {
+    font-size: 2.5rem;
+    color: #473874;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.garantia p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.garantia-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.oferta-limitada p {
+    font-size: 1.2rem;
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.prazo p {
+.oferta-limitada .note {
+    color: #fff;
+}
+
+.timer {
+    margin: 30px 0;
     font-size: 1.2rem;
+    font-weight: bold;
+    /* color: #34495e; */
+}
+
+#countdown {
+    font-size: 3rem;
+    color: #fff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.preco {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.bonus-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bonus-item h3 {
+    font-size: 1.5rem;
+    color: #4a5f9e;
+    margin-bottom: 10px;
+}
+
+.bonus-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.bonus-item .price {
+    font-size: 1rem;
+    color: #ff0000;
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.bonus-item .free {
+    font-size: 1.2rem;
+    color: #008000;
+    font-weight: bold;
+}
+
+.valor-investimento {
+    background: linear-gradient(180deg, #b399d4, #473874);
+}
+
+.valor-investimento p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.final-note {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    color: #473874;
 }
 
 /* FAQ Section */
 .faq {
-    background: #f0f4c3;
-    padding: 50px 20px;
-}
-
-.faq h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    background: #b399d4;
 }
 
 details {
@@ -246,6 +394,7 @@ details {
     background: #fff;
     border-radius: 5px;
     border: 1px solid #ccc;
+    text-align: start;
 }
 
 details summary {
@@ -289,105 +438,57 @@ footer .social-links a img:hover {
         max-width: 1000px;
     }
 
-    .depoimentos-list {
+    .list {
         flex-wrap: wrap;
     }
 
-    .depoimento-item {
+    .list-item {
         max-width: 250px;
+    }
+
+    p + p.dynamic-numbers {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
     .video-explicativo {
         width: 100%;
     }
 
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    .depoimentos-list {
+    .list {
         flex-direction: column;
         align-items: center;
     }
 
-    .depoimento-item {
+    .list-item {
         max-width: 90%;
         margin-bottom: 20px;
-    }
-
-    .prazo h2 {
-        font-size: 1.8rem;
-    }
-
-    .prazo p {
-        font-size: 1rem;
-    }
-
-    details summary {
-        font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        padding: 40px 20px;
-    }
-
     .hero h1 {
         font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 
     .hero .logo {
-        width: 120px;
+        width: 200px;
     }
 
-    .depoimentos-list {
+    .list {
         gap: 10px;
     }
 
-    .depoimento-item {
+    .list-item {
         max-width: 100%;
-    }
-
-    .faq details {
-        padding: 8px;
-    }
-
-    details summary {
-        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 576px) {
-    .hero h1 {
-        font-size: 1.5rem;
-    }
-
-    .cta-button {
-        font-size: 0.8rem;
-        padding: 8px 16px;
-    }
-
     .dores ul li {
         font-size: 1rem;
-    }
-
-    .prazo h2 {
-        font-size: 1.5rem;
-    }
-
-    .prazo p {
-        font-size: 0.9rem;
-    }
-
-    .faq details {
-        font-size: 0.9rem;
     }
 }
