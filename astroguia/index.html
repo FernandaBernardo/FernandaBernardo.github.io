@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroGuia - Transforme sua Vida</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="astroguia.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -208,10 +208,12 @@
                     <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
                 </div>
             </div>
-            <p class="preco">
-                Por apenas <strong>12x de R$14,99</strong> ou <strong>R$149,90 à vista</strong>!
-            </p>
-            <a href="https://pay.kirvano.com/38a801d5-9355-4530-9172-5ad12388590a" class="cta-button">Quero transformar minha vida agora</a>
+            <div class="oferta">
+                <p class="preco">
+                    Por apenas <strong>12x de R$14,99</strong> ou <strong>R$149,90 à vista</strong>!
+                </p>
+                <a href="https://pay.kirvano.com/38a801d5-9355-4530-9172-5ad12388590a" class="cta-button">Comprar agora</a>
+            </div>
             <p class="note">As vagas estão se esgotando, não fique de fora!</p>
         </div>
     </section>
@@ -272,95 +274,89 @@
     </section>
 
     <footer>
-            <div class="container">
-                <p>&copy; <script>now = new Date; document.write(now.getFullYear());</script> AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
-                        <img src="../img/instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="https://www.facebook.com/astroguia.astrologia" target="_blank">
-                        <img src="../img/facebook.svg" alt="Facebook">
-                    </a>
-                    <a href="mailto:astroguia@fernandabernardo.com.br" target="_blank">
-                        <img src="../img/email-invertido.png" alt="E-mail">
-                    </a>
-                </div>
+        <div class="container">
+            <p>&copy; <script>now = new Date; document.write(now.getFullYear());</script> AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
+                    <img src="../img/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/astroguia.astrologia" target="_blank">
+                    <img src="../img/facebook.svg" alt="Facebook">
+                </a>
+                <a href="mailto:astroguia@fernandabernardo.com.br" target="_blank">
+                    <img src="../img/email-invertido.png" alt="E-mail">
+                </a>
             </div>
-        </footer>
-
+        </div>
+    </footer>
     <script>
-       document.addEventListener("DOMContentLoaded", () => {
-        // Função para iniciar a animação dos números
-        const incrementNumber = (numberElement, target) => {
-            let count = 0;
+        document.addEventListener("DOMContentLoaded", () => {
+            const incrementNumber = (numberElement, target) => {
+                let count = 0;
 
-            const updateNumber = () => {
-                if (count < target) {
-                    count += 5; // Incremento ajustável
-                    numberElement.textContent = count;
-                    setTimeout(updateNumber, 50); // Ajuste a velocidade
-                } else {
-                    numberElement.textContent = target;
-                }
-            };
-
-            updateNumber();
-        };
-
-        // Intersection Observer para monitorar a seção "depoimentos"
-        const observer = new IntersectionObserver(
-            (entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        // Inicia a animação quando a seção entra no viewport
-                        const numberElement = document.getElementById("num-transformacoes");
-                        if (numberElement) {
-                            incrementNumber(numberElement, 500); // Alvo ajustável
-                        }
-                        observer.unobserve(entry.target); // Para observar apenas uma vez
+                const updateNumber = () => {
+                    if (count < target) {
+                        count += 5; // Incremento ajustável
+                        numberElement.textContent = count;
+                        setTimeout(updateNumber, 50); // Velocidade ajustável
+                    } else {
+                        numberElement.textContent = target;
                     }
-                });
-            },
-            { threshold: 0.5 } // Inicia quando 50% da seção está visível
-        );
+                };
 
-        // Observe a seção "depoimentos"
-        const depoimentosSection = document.getElementById("depoimentos");
-        if (depoimentosSection) {
-            observer.observe(depoimentosSection);
-        }
-    });
+                updateNumber();
+            };
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const countdown = () => {
-            const timerElement = document.getElementById("countdown");
-            const endTime = new Date(new Date().getTime() + 15 * 60 * 1000); // 15 minutes from now
+            // Função para verificar se o elemento está visível
+            const startAnimationIfVisible = () => {
+                const depoimentosSection = document.getElementById("depoimentos");
+                const numberElement = document.getElementById("num-transformacoes");
 
-            const updateTimer = () => {
-                const now = new Date().getTime();
-                const distance = endTime - now;
+                if (depoimentosSection && numberElement) {
+                    const rect = depoimentosSection.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
-                if (distance > 0) {
-                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                    timerElement.innerHTML = `
-                        <span id="hours">${hours.toString().padStart(2, "0")}</span>:
-                        <span id="minutes">${minutes.toString().padStart(2, "0")}</span>:
-                        <span id="seconds">${seconds.toString().padStart(2, "0")}</span>
-                    `;
-                } else {
-                    timerElement.innerHTML = "00:00:00";
+                    if (isVisible) {
+                        incrementNumber(numberElement, 500); // Alvo ajustável
+                        window.removeEventListener("scroll", startAnimationIfVisible); // Remove o evento após executar
+                    }
                 }
             };
 
-            setInterval(updateTimer, 1000);
-            updateTimer();
-        };
+            // Adiciona o listener de scroll e verifica imediatamente
+            window.addEventListener("scroll", startAnimationIfVisible);
+            startAnimationIfVisible();
 
-        countdown();
-    });
+            // Função de contagem regressiva
+            const countdown = () => {
+                const timerElement = document.getElementById("countdown");
+                const endTime = new Date(new Date().getTime() + 15 * 60 * 1000); // 15 minutos a partir de agora
+
+                const updateTimer = () => {
+                    const now = new Date().getTime();
+                    const distance = endTime - now;
+
+                    if (distance > 0) {
+                        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                        timerElement.innerHTML = `
+                            <span id="hours">${hours.toString().padStart(2, "0")}</span>:
+                            <span id="minutes">${minutes.toString().padStart(2, "0")}</span>:
+                            <span id="seconds">${seconds.toString().padStart(2, "0")}</span>
+                        `;
+                    } else {
+                        timerElement.innerHTML = "00:00:00";
+                    }
+                };
+
+                setInterval(updateTimer, 1000); // Atualiza a cada segundo
+                updateTimer(); // Atualiza imediatamente
+            };
+
+            countdown();
+        });
     </script>
 </body>
 </html>

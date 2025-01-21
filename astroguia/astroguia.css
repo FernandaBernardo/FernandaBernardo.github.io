@@ -289,7 +289,7 @@ p + p.dynamic-numbers {
     font-size: 2.5rem;
     color: #473874;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .garantia p {
@@ -306,34 +306,46 @@ p + p.dynamic-numbers {
 }
 
 .oferta-limitada p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .oferta-limitada .note {
     color: #fff;
 }
 
+.oferta {
+    border-radius: 5px;
+    border: 3px solid #FFD700;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 3rem 6rem;
+    display: inline-block;
+}
+
 .timer {
     margin: 30px 0;
     font-size: 1.2rem;
-    font-weight: bold;
-    /* color: #34495e; */
+    font-weight: 600;
 }
 
 #countdown {
     font-size: 3rem;
     color: #fff;
     margin: 10px 0;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-.preco {
-    font-size: 1.5rem;
-    font-weight: bold;
+p.preco {
+    color: #333;
+    font-size: 3rem;
+}
+
+.preco strong:first-child {
     color: #FFD700;
-    margin-bottom: 20px;
+    font-size: 5rem;
+    display: block;
+    font-weight: 800;
 }
 
 .bonus-item:hover {
@@ -364,7 +376,7 @@ p + p.dynamic-numbers {
 .bonus-item .free {
     font-size: 1.2rem;
     color: #008000;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .valor-investimento {
@@ -398,7 +410,7 @@ details {
 }
 
 details summary {
-    font-weight: bold;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -434,6 +446,10 @@ footer .social-links a img:hover {
 
 /* Responsividade */
 @media (max-width: 1200px) {
+    section {
+        padding: 1.5rem 2rem;
+    }
+    
     .container {
         max-width: 1000px;
     }
@@ -448,6 +464,17 @@ footer .social-links a img:hover {
 
     p + p.dynamic-numbers {
         font-size: 2rem;
+    }
+
+    .oferta {
+        padding: 2rem;
+    }
+    p.preco {
+        font-size: 1.5rem;
+    }
+
+    .preco strong:first-child {
+        font-size: 3rem;
     }
 }
 
