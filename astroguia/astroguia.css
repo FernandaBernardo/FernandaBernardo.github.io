@@ -24,6 +24,7 @@ h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-family: "Berkshire Swash", serif;
+    text-shadow: 1px 1px 2px white;
 }
 
 section {
@@ -100,6 +101,7 @@ strong {
 .dores h2, .beneficios h2, .bonus h2 {
     font-size: 2.5rem;
     color: #ff7eb3;
+    text-shadow: 1px 1px 2px black;
 }
 
 .dores ul, .beneficios ul {
@@ -174,6 +176,7 @@ strong {
     font-size: 2.5em;
     margin-top: 60px;
     margin-bottom: 40px;
+    text-shadow: 1px 1px 2px white;
 }
 
 .depoimentos h3 + p, .depoimentos .impacto + p, .depoimentos p + p {
@@ -226,6 +229,10 @@ p + p.dynamic-numbers {
     background-image: url(img/processo.png);
     background-size: cover;
     color: #fff;
+}
+
+.processo h2 {
+    text-shadow: 1px 1px 2px black;
 }
 
 .processo .impacto {
@@ -446,10 +453,6 @@ footer .social-links a img:hover {
 
 /* Responsividade */
 @media (max-width: 1200px) {
-    section {
-        padding: 1.5rem 2rem;
-    }
-    
     .container {
         max-width: 1000px;
     }
@@ -464,17 +467,6 @@ footer .social-links a img:hover {
 
     p + p.dynamic-numbers {
         font-size: 2rem;
-    }
-
-    .oferta {
-        padding: 2rem;
-    }
-    p.preco {
-        font-size: 1.5rem;
-    }
-
-    .preco strong:first-child {
-        font-size: 3rem;
     }
 }
 
@@ -517,5 +509,20 @@ footer .social-links a img:hover {
 @media (max-width: 576px) {
     .dores ul li {
         font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5rem 2rem;
+    }
+
+    .oferta {
+        padding: 2rem;
+    }
+    p.preco {
+        font-size: 1.5rem;
+    }
+
+    .preco strong:first-child {
+        font-size: 3rem;
     }
 }
