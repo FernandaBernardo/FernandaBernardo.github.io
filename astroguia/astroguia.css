@@ -247,6 +247,10 @@ p + p.dynamic-numbers {
     border-radius: 5px;
 }
 
+.pagamento img {
+    width: 50%;
+}
+
 .processo .impacto {
     background-color: #b399d4;
     display: inline-block;
@@ -566,5 +570,13 @@ footer .social-links a img:hover {
     .cta-button {
         padding: 1rem 3rem;
         margin: 0.5rem;
+    }
+
+    .processo img {
+        width: 100%;
+    }
+
+    .processo .impacto {
+        width: 100%;
     }
 }
