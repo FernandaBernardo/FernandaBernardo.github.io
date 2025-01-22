@@ -21,7 +21,7 @@ body {
 /* Geral settings */
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-family: "Berkshire Swash", serif;
     text-shadow: 1px 1px 2px white;
@@ -78,14 +78,15 @@ strong {
     display: inline-block;
     background: #FFD700;
     color: #333;
-    padding: 15px 30px;
+    padding: 1.5rem 5rem;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
     text-transform: uppercase;
     transition: background 0.3s;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
+    margin: 1.5rem;
 }
 
 .cta-button:hover {
@@ -95,11 +96,12 @@ strong {
 
 /* Dores Section */
 .dores, .beneficios, .bonus {
-    background: linear-gradient(180deg, #473874, #b399d4)
+    /* background: linear-gradient(180deg, #473874, #b399d4) */
+    background: #b399d4;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
 }
 
 .dores h2, .beneficios h2, .bonus h2 {
-    font-size: 2.5rem;
     color: #ff7eb3;
     text-shadow: 1px 1px 2px black;
 }
@@ -128,7 +130,8 @@ strong {
 
 /* Depoimentos Section */
 .depoimentos, .exclusivo, .oferta-limitada {
-    background: linear-gradient(180deg, #ff7eb3, #b399d4, #473874);
+    background: #ff7eb3;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
 }
 
 .exclusivo .list {
@@ -220,7 +223,9 @@ p + p.dynamic-numbers {
 
 /* Prazo Section */
 .prazo {
-    background: linear-gradient(180deg, #ff7eb3,  #ff7eb3, #b399d4);  
+    /* background: linear-gradient(180deg, #ff7eb3,  #ff7eb3, #b399d4); */
+    background: #b399d4;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
 }
 
 /* Processo Section */
@@ -235,8 +240,17 @@ p + p.dynamic-numbers {
     text-shadow: 1px 1px 2px black;
 }
 
+.processo img {
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
 .processo .impacto {
     background-color: #b399d4;
+    display: inline-block;
+    width: 70%;
 }
 
 .processo p {
@@ -257,7 +271,7 @@ p + p.dynamic-numbers {
 }
 
 .bonus {
-    padding: 60px 20px;
+    padding: 60px 20px 40px;
     text-align: center;
 }
 
@@ -288,12 +302,11 @@ p + p.dynamic-numbers {
 
 .garantia {
     background: linear-gradient(0deg, #ff7eb3, #b399d4);
-    padding: 60px 20px;
+    padding: 0px 20px 20px;
     text-align: center;
 }
 
 .garantia h2, .oferta-limitada h2 {
-    font-size: 2.5rem;
     color: #473874;
     margin-bottom: 20px;
     font-weight: 600;
@@ -330,6 +343,21 @@ p + p.dynamic-numbers {
     display: inline-block;
 }
 
+.oferta p:first-child {
+    display: inline-block;
+    background-color: #473874;
+    color: #fff;
+    padding: 0 2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+.oferta p {
+    color: #333;
+    font-size: 2rem;
+}
+
 .timer {
     margin: 30px 0;
     font-size: 1.2rem;
@@ -344,15 +372,16 @@ p + p.dynamic-numbers {
 }
 
 p.preco {
-    color: #333;
-    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 .preco strong:first-child {
     color: #FFD700;
+    margin-left: 0.5rem;
     font-size: 5rem;
-    display: block;
     font-weight: 800;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
 .bonus-item:hover {
@@ -405,15 +434,17 @@ p.preco {
 /* FAQ Section */
 .faq {
     background: #b399d4;
+    background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
 }
 
 details {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 20px 0;
+    padding: 15px;
     background: #fff;
     border-radius: 5px;
     border: 1px solid #ccc;
     text-align: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 details summary {
@@ -517,12 +548,23 @@ footer .social-links a img:hover {
 
     .oferta {
         padding: 2rem;
+        display: block;
     }
+
+    .oferta p {
+        font-size: 1.5rem;
+    }
+
     p.preco {
         font-size: 1.5rem;
     }
 
     .preco strong:first-child {
         font-size: 3rem;
+    }
+
+    .cta-button {
+        padding: 1rem 3rem;
+        margin: 0.5rem;
     }
 }
