@@ -293,6 +293,13 @@
         </div>
     </footer>
     <script defer>
+        // Obtenha o ano atual
+        const now = new Date();
+        const year = now.getFullYear();
+        
+        // Insira o ano no elemento com ID 'year'
+        document.getElementById('year').textContent = year;
+
         document.addEventListener("DOMContentLoaded", () => {
             const incrementNumber = (numberElement, target) => {
                 let count = 0;
