@@ -46,7 +46,7 @@ strong {
 .hero {
     text-align: center;
     padding: 30px 20px;
-    background-image: url(img/hero.png);
+    background-image: url(img/hero.webp);
     background-size: cover;
 }
 
@@ -231,7 +231,7 @@ p + p.dynamic-numbers {
 /* Processo Section */
 .processo {
     background-color: #473874;
-    background-image: url(img/processo.png);
+    background-image: url(img/processo.webp);
     background-size: cover;
     color: #fff;
 }
