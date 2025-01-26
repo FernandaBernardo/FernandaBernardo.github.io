@@ -18,6 +18,7 @@ header h1 {
 header p {
 	font-weight: 400;
 	font-size: 1.5em;
+	margin-bottom: 0.5em;
 }
 
 header section {
@@ -37,6 +38,7 @@ header.container {
 	vertical-align: middle;
 	width: 250px;
 	height: 250px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .social {

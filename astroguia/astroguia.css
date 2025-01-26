@@ -289,7 +289,6 @@ p + p.dynamic-numbers {
 
 .bonus {
     padding: 60px 20px 40px;
-    text-align: center;
 }
 
 .bonus p {
@@ -312,7 +311,6 @@ p + p.dynamic-numbers {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 280px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex: 1 0 40%;
 }
@@ -320,7 +318,6 @@ p + p.dynamic-numbers {
 .garantia {
     background: linear-gradient(0deg, #ff7eb3, #b399d4);
     padding: 0px 20px 20px;
-    text-align: center;
 }
 
 .garantia h2, .oferta-limitada h2 {
