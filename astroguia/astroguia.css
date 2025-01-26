@@ -139,6 +139,13 @@ strong {
     justify-content: center;
 }
 
+.depoimentos .list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .list-item {
     background: #fdfdfd;
     border: 2px solid #b399d4;
