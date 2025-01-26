@@ -130,7 +130,7 @@
                         <p><strong>Dicionário astrológico</strong> para você entender o que significa cada termo dentro do seu mapa</p>
                     </div>
                     <div class="list-item">
-                        <p>Panorama para alinhar todas as <strong>áreas da sua vida</strong> em <span id="year"></span></p>
+                        <p>Panorama para alinhar todas as <strong>áreas da sua vida</strong> em <span class="year"></span></p>
                     </div>
                     <div class="list-item">
                         <p>Suporte com <strong>equipe especializada</strong> de segunda a sábado</p>
@@ -165,9 +165,9 @@
                     <span class="free">Por: <strong>GRÁTIS</strong></span>
                 </div>
                 <div class="bonus-item">
-                    <h3>🔮 Mapa Numerológico</h3>
-                    <p>De acordo com o seu nome e data de nascimento, conseguimos te trazer mais informações para te ajudar no seu autoconhecimento.</p>
-                    <span class="price">De: R$149,00</span>
+                    <h3>🔮 Panorama <span class="year"></span></h3>
+                    <p>De acordo com o seu mapa astral, tenha acesso a como será seu ano em diferentes áreas da sua vida.</p>
+                    <span class="price">De: R$97,00</span>
                     <span class="free">Por: <strong>GRÁTIS</strong></span>
                 </div>
             </div>
@@ -272,7 +272,7 @@
 
     <footer>
         <div class="container">
-            <p id="copyright">&copy; <span id="year"></span> AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
+            <p id="copyright">&copy; <span class="year"></span> AstroGuia. Feito com 💫 para o seu crescimento pessoal.</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/astroguia_astrologia" target="_blank">
                     <img src="../img/instagram.svg" alt="Instagram" width="24" height="24" loading="lazy">
@@ -291,8 +291,11 @@
         const now = new Date();
         const year = now.getFullYear();
         
-        // Insira o ano no elemento com ID 'year'
-        document.getElementById('year').textContent = year;
+        // Insira o ano no elemento com class 'year'
+        const years = document.getElementsByClassName('year');
+        Array.from(years).forEach(element => {
+            element.textContent = year;
+        });
 
         document.addEventListener("DOMContentLoaded", () => {
             const incrementNumber = (numberElement, target) => {
