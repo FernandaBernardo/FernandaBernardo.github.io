@@ -68,10 +68,7 @@ strong {
 }
 
 .video-explicativo {
-    width: 80%;
-    margin: 20px auto 40px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
 }
 
 .cta-button {
@@ -134,26 +131,22 @@ strong {
     background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);
 }
 
-.exclusivo .list {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.list {
+.exclusivo-oferta {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    justify-content: center;
 }
 
 .list-item {
-    align-content: center;
     background: #fdfdfd;
     border: 2px solid #b399d4;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
 }
 
 .list-item:hover {
@@ -171,6 +164,19 @@ strong {
 
 .list-item:hover .depoimento-avatar {
     border: 3px solid #473874;
+}
+
+.list-item p {
+    font-style: italic;
+}
+
+.list-item span {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.list-item strong {
+    text-align: right;
 }
 
 .depoimentos h3 {
