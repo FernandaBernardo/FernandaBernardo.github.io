@@ -505,7 +505,7 @@ footer .social-links a img:hover {
         max-width: 1000px;
     }
 
-    .list {
+    .depoimentos .list {
         flex-wrap: wrap;
     }
 
@@ -523,7 +523,7 @@ footer .social-links a img:hover {
         width: 100%;
     }
 
-    .list {
+    .depoimento .list {
         flex-direction: column;
         align-items: center;
     }
@@ -545,12 +545,20 @@ footer .social-links a img:hover {
         width: 200px;
     }
 
-    .list {
+    .depoimento .list {
         gap: 10px;
     }
 
     .list-item {
         max-width: 100%;
+    }
+
+    .exclusivo-oferta {
+        display: block;
+    }
+
+    .video-explicativo {
+        margin-bottom: 40px;
     }
 }
 
