@@ -175,6 +175,7 @@ strong {
 
 .list-item p {
     font-style: italic;
+    font-weight: normal;
 }
 
 .list-item span {
@@ -184,6 +185,7 @@ strong {
 
 .list-item strong {
     text-align: right;
+    font-weight: bold;
 }
 
 .depoimentos h3 {
